@@ -90,3 +90,32 @@ Today, an app grammar **cannot force the UI into dark or light mode** — recurs
 - **Non-consent axiom** — no card text may claim authority over the user ("you are...", "you will..."). Prompts are questions; readings are offered framings.
 - **Honesty about what it is** — facts and mirror kept in separate, labeled layers; no astronomy claim without a verifiable basis.
 - **Grief and play coexist** — the Kali mode is allowed to be genuinely about endings, dissolution, and time; the system does not sanitize the dark to stay palatable, and does not solemnize the light to stay serious.
+
+## Charts without doctrine — the adaptive sky (builder, Jul 2 2026)
+
+Not inherited zodiacal doctrine. **No signs, no houses, no birth-chart claims.** Objects are
+selected for what they actually are, not for where they sit relative to Earth's ecliptic.
+
+What replaces the chart: **times and places in the sky, connected — as invitation, not claim.**
+The system never asserts that the moment you were born was deterministic. But if YOU want to hold
+that moment as meaningful — special enough to have left a mark worth contemplating — you can
+investigate it as a chart. The belief is the user's to bring; the system supplies an honest sky.
+(This is the non-consent axiom applied to astrology.)
+
+**The caster casts MAPS, not cards.** Copy the tarot spread machinery (the platform's
+channel-defined casting shapes): where tarot's shape is a spread of card positions,
+kali-paradevi's shape is a cast SKY MAP — a time + place resolved into what was actually
+overhead, rendered in the dual-mode visual language, each object flippable through its
+emanation pair.
+
+**"How to read your chart" is an artwork, not a manual.** Contemplation surfaces use the
+recursive.eco spiral-animation language — backgrounds of spirals that keep appearing while
+someone sits with a reading — instead of doctrinal how-to text.
+
+**Reading lenses are OURS — never attributed to thinkers who didn't say them.** A lens like
+"read the card as a mirror of what is not yet lived" is our creation, influenced by depth
+psychology, and is presented as ours (no "— Jung" on words Jung never said). Lenses are the
+adaptive ways a person relates to a reading, and lens visibility is a CHANNEL CUSTOMIZATION:
+each channel (and possibly each page) chooses whether lenses render, which ones, or none.
+(Note: recursive-tarot currently has lens texts attributed to named thinkers in
+viewers/voices.json + course MDX — flagged for the same fix.)
