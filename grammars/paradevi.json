@@ -1,0 +1,214 @@
+{
+  "_grammar_commons": {
+    "schema_version": "1.0",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": [
+      {
+        "name": "PlayfulProcess",
+        "date": "2026-07-02",
+        "note": "Original creator — Kali/Paradevi dual grammar, light half"
+      }
+    ]
+  },
+  "name": "Paradevi — The Light Grammar",
+  "description": "Galaxies, first light, and the radiant architecture of the cosmos — the grammar of what pours forth, connects, and emanates. It is one half of a dual system: every luminous item here names its dark twin in the Kali grammar, and one is the emanation of the other. Item images will be added later from public-domain and NASA sources.",
+  "grammar_type": "custom",
+  "creator_name": "PlayfulProcess",
+  "tags": ["kali-paradevi", "astronomy", "galaxies", "light", "reflection"],
+  "_notes": "Seed grammar for the kali-paradevi project. Paired 1:1 with grammars/kali.json via metadata.emanation (the paired item's id in the other grammar). image_url intentionally absent — images come later via commons_image_search / NASA from claude.ai.",
+  "items": [
+    {
+      "id": "milky-way",
+      "name": "The Milky Way",
+      "sort_order": 0,
+      "category": "galaxy",
+      "sections": {
+        "Description": "Our home: a barred spiral galaxy about 100,000 light-years across, holding on the order of a few hundred billion stars. We live in one of its spiral arms, about 26,000 light-years from the center, and on dark nights we see our own galaxy from the inside — a river of light across the sky.",
+        "Reflection": "You have never seen your whole self from the outside; you only ever glimpse the river of your own light from within it. What does your life look like from where you stand inside it tonight? What radiance are you part of that you can only see edge-on?"
+      },
+      "keywords": ["home", "belonging", "the river of light", "inside view"],
+      "metadata": {
+        "emanation": "sagittarius-a-star",
+        "emanation_name": "Sagittarius A*",
+        "emanation_grammar": "kali"
+      }
+    },
+    {
+      "id": "andromeda",
+      "name": "Andromeda",
+      "sort_order": 1,
+      "category": "galaxy",
+      "sections": {
+        "Description": "The nearest large spiral galaxy, about 2.5 million light-years away and home to on the order of a trillion stars. It is the most distant object easily visible to the naked eye — and in roughly four to five billion years it and the Milky Way will merge into a single galaxy.",
+        "Reflection": "The farthest thing your unaided eye can see is another immensity, already on its slow way toward you. What great meeting is approaching your life so gradually that you forget it is coming? How do you want to have lived when it arrives?"
+      },
+      "keywords": ["approach", "vastness", "the visible far", "future union"],
+      "metadata": {
+        "emanation": "m87-star-powehi",
+        "emanation_name": "M87* (Pōwehi)",
+        "emanation_grammar": "kali"
+      }
+    },
+    {
+      "id": "whirlpool-galaxy",
+      "name": "Whirlpool Galaxy",
+      "sort_order": 2,
+      "category": "galaxy",
+      "sections": {
+        "Description": "Messier 51, about 30 million light-years away — a grand-design spiral locked in a gravitational dance with its small companion galaxy. In 1845 it became the first galaxy in which spiral structure was ever seen, its arms drawn into clarity partly by its companion's pull.",
+        "Reflection": "Its beauty is not despite the pull upon it — the pull is what combed its light into spirals. Whose gravity has shaped your most beautiful patterns? What form has emerged in you only because something else keeps tugging at your edges?"
+      },
+      "keywords": ["dance", "pattern", "shaping pull", "spiral", "relationship"],
+      "metadata": {
+        "emanation": "great-attractor",
+        "emanation_name": "The Great Attractor",
+        "emanation_grammar": "kali"
+      }
+    },
+    {
+      "id": "sombrero-galaxy",
+      "name": "Sombrero Galaxy",
+      "sort_order": 3,
+      "category": "galaxy",
+      "sections": {
+        "Description": "Messier 104, about 30 million light-years away: a luminous bulge of stars crossed by a dark brim of dust, one of the most photographed galaxies in the sky. Beneath its glow sits a central black hole of roughly a billion solar masses — an enormous darkness wearing a crown of light.",
+        "Reflection": "The brightest halo in the room may be carried by the heaviest center. Where do you wear radiance over weight? Without stripping the light away, can you let one trusted person see what it rests upon?"
+      },
+      "keywords": ["radiance over weight", "the crown of light", "hidden mass"],
+      "metadata": {
+        "emanation": "ton-618",
+        "emanation_name": "TON 618",
+        "emanation_grammar": "kali"
+      }
+    },
+    {
+      "id": "pinwheel-galaxy",
+      "name": "Pinwheel Galaxy",
+      "sort_order": 4,
+      "category": "galaxy",
+      "sections": {
+        "Description": "Messier 101, a face-on grand-design spiral about 21 million light-years away, notably larger than the Milky Way and rich with star-forming regions. In 2023 one of its massive stars died as supernova SN 2023ixf — one of the nearest such stellar deaths seen in years, watched by telescopes and backyard observers alike.",
+        "Reflection": "In the same wheel of light, stars are being born and a great star was watched as it died — and the wheel kept turning. What in your life is ending and beginning inside the same turning? Can you hold both without asking the wheel to stop?"
+      },
+      "keywords": ["the turning wheel", "birth and death together", "renewal"],
+      "metadata": {
+        "emanation": "stellar-collapse",
+        "emanation_name": "Stellar Collapse — How a Black Hole Is Born",
+        "emanation_grammar": "kali"
+      }
+    },
+    {
+      "id": "large-magellanic-cloud",
+      "name": "Large Magellanic Cloud",
+      "sort_order": 5,
+      "category": "galaxy",
+      "sections": {
+        "Description": "A satellite galaxy of the Milky Way, about 160,000 light-years away and visible to the naked eye from the southern hemisphere. It holds the Tarantula Nebula, the most vigorous star-forming region in our galactic neighborhood, and in 1987 it gave us the nearest supernova seen in centuries.",
+        "Reflection": "The small companion is not lesser — it carries the fiercest nursery of new light in the whole neighborhood. What smaller presence orbits your life quietly while making more newness than anything at the center? What would it mean to honor it out loud?"
+      },
+      "keywords": ["companionship", "the generous small", "nursery", "gift"],
+      "metadata": {
+        "emanation": "cygnus-x-1",
+        "emanation_name": "Cygnus X-1",
+        "emanation_grammar": "kali"
+      }
+    },
+    {
+      "id": "cartwheel-galaxy",
+      "name": "Cartwheel Galaxy",
+      "sort_order": 6,
+      "category": "galaxy",
+      "sections": {
+        "Description": "A ring galaxy about 500 million light-years away, created when a smaller galaxy plunged straight through a spiral's heart. The collision sent a ripple outward like a stone dropped in a pond, and that expanding ring blazes with newborn stars — a wound turned into a wheel of light.",
+        "Reflection": "Something once went straight through the middle of you — and the ripple it left is where your newest light is forming. Trace the ring: what began growing in you only at the edge of that impact? What is the wound making?"
+      },
+      "keywords": ["impact", "ripple", "regeneration", "wound into light"],
+      "metadata": {
+        "emanation": "v404-cygni",
+        "emanation_name": "V404 Cygni",
+        "emanation_grammar": "kali"
+      }
+    },
+    {
+      "id": "antennae-galaxies",
+      "name": "The Antennae Galaxies",
+      "sort_order": 7,
+      "category": "galaxy",
+      "sections": {
+        "Description": "Two galaxies, about 60 million light-years away, caught mid-collision — their stars flung into two long streaming tails that give the pair its insect name. The crash is not destroying them: it has ignited billions of new stars, and over hundreds of millions of years the two will become one.",
+        "Reflection": "When two whole worlds truly meet, the meeting scatters pieces of both into long bright trails — and kindles what neither could kindle alone. What collision in your life is still throwing out sparks? What is being made in you that needed the crash?"
+      },
+      "keywords": ["collision", "co-creation", "sparks", "becoming one"],
+      "metadata": {
+        "emanation": "gw150914",
+        "emanation_name": "GW150914",
+        "emanation_grammar": "kali"
+      }
+    },
+    {
+      "id": "cosmic-web",
+      "name": "The Cosmic Web",
+      "sort_order": 8,
+      "category": "structure",
+      "sections": {
+        "Description": "The largest known pattern in nature: galaxies are not scattered randomly but strung along immense filaments of matter that meet at bright clusters and frame enormous voids. On the grandest scale, the universe looks like a luminous net — everything connected along threads of gravity.",
+        "Reflection": "Seen from far enough away, nothing stands alone; every light is a knot in a net of threads too long to see. What threads hold you that you rarely feel? Follow one outward tonight — where does it lead, and who else is strung along it?"
+      },
+      "keywords": ["connection", "the net", "threads", "belonging", "scale"],
+      "metadata": {
+        "emanation": "event-horizon",
+        "emanation_name": "The Event Horizon",
+        "emanation_grammar": "kali"
+      }
+    },
+    {
+      "id": "first-light-reionization",
+      "name": "First Light — Reionization",
+      "sort_order": 9,
+      "category": "era",
+      "sections": {
+        "Description": "Within the first few hundred million years after the Big Bang, the first stars ignited and ended the cosmic dark ages. Their radiation slowly re-lit the universe, ionizing the fog of neutral hydrogen until space became transparent — and telescopes like JWST now catch galaxies shining from that dawn.",
+        "Reflection": "The first light did not merely shine — it cleared the fog so that all later light could travel. When did a first small clarity in you make every later seeing possible? What fog in your life is one honest flame away from becoming transparent?"
+      },
+      "keywords": ["dawn", "clearing", "first flame", "transparency"],
+      "metadata": {
+        "emanation": "cosmic-dark-ages",
+        "emanation_name": "The Cosmic Dark Ages",
+        "emanation_grammar": "kali"
+      }
+    },
+    {
+      "id": "m82-starburst",
+      "name": "Messier 82 (Cigar Galaxy)",
+      "sort_order": 10,
+      "category": "galaxy",
+      "sections": {
+        "Description": "A starburst galaxy about 12 million light-years away, stirred up by a close pass from its big neighbor M81. It is forming stars roughly ten times faster than the Milky Way, and the fury drives a glowing wind of gas out of the galaxy's disk — light pouring forth faster than it can be contained.",
+        "Reflection": "There are seasons when making pours out of you faster than you can hold it, and the overflow becomes its own kind of wind. What is pouring forth from you right now? Instead of containing it, can you ask where the wind wants to carry it?"
+      },
+      "keywords": ["outpouring", "abundance", "creative fire", "overflow"],
+      "metadata": {
+        "emanation": "hawking-radiation",
+        "emanation_name": "Hawking Radiation",
+        "emanation_grammar": "kali"
+      }
+    },
+    {
+      "id": "local-group",
+      "name": "The Local Group",
+      "sort_order": 11,
+      "category": "structure",
+      "sections": {
+        "Description": "Our cosmic neighborhood: several dozen galaxies bound together by gravity within about 10 million light-years, anchored by its two great spirals, the Milky Way and Andromeda, with a crowd of dwarf galaxies gathered around them. Amid the vast emptiness between structures, this is the company we keep.",
+        "Reflection": "Against the scale of the voids, you are astonishingly accompanied. Count your local group — the few dozen lights gravity has actually bound to you. Who anchors it? Who are the small faint members you forget to count? Greet one of them today."
+      },
+      "keywords": ["neighborhood", "kinship", "the bound few", "company"],
+      "metadata": {
+        "emanation": "bootes-void",
+        "emanation_name": "The Boötes Void",
+        "emanation_grammar": "kali"
+      }
+    }
+  ]
+}

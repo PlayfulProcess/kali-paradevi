@@ -1,0 +1,214 @@
+{
+  "_grammar_commons": {
+    "schema_version": "1.0",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": [
+      {
+        "name": "PlayfulProcess",
+        "date": "2026-07-02",
+        "note": "Original creator — Kali/Paradevi dual grammar, dark half"
+      }
+    ]
+  },
+  "name": "Kali — The Dark Grammar",
+  "description": "Black holes, voids, and the unlit stretches of the cosmos — the grammar of what devours, dissolves, and transforms. It is one half of a dual system: every dark item here names its twin of light in the Paradevi grammar, and one is the emanation of the other. Item images will be added later from public-domain and NASA sources.",
+  "grammar_type": "custom",
+  "creator_name": "PlayfulProcess",
+  "tags": ["kali-paradevi", "astronomy", "black-holes", "void", "reflection"],
+  "_notes": "Seed grammar for the kali-paradevi project. Paired 1:1 with grammars/paradevi.json via metadata.emanation (the paired item's id in the other grammar). image_url intentionally absent — images come later via commons_image_search / NASA from claude.ai.",
+  "items": [
+    {
+      "id": "sagittarius-a-star",
+      "name": "Sagittarius A*",
+      "sort_order": 0,
+      "category": "black-hole",
+      "sections": {
+        "Description": "The supermassive black hole at the center of our own Milky Way, about 26,000 light-years away, with a mass of roughly four million Suns. In 2022 the Event Horizon Telescope released its image — a glowing ring around the shadow of the black hole every star in our galaxy orbits.",
+        "Reflection": "There is a quiet center in you that everything else circles without ever quite seeing. What in your life keeps its orbit around something dark, patient, and unnamed? What would it mean to greet that center instead of only circling it?"
+      },
+      "keywords": ["center", "the unseen heart", "gravity", "orbit", "stillness"],
+      "metadata": {
+        "emanation": "milky-way",
+        "emanation_name": "The Milky Way",
+        "emanation_grammar": "paradevi"
+      }
+    },
+    {
+      "id": "m87-star-powehi",
+      "name": "M87* (Pōwehi)",
+      "sort_order": 1,
+      "category": "black-hole",
+      "sections": {
+        "Description": "The supermassive black hole at the heart of the giant galaxy M87, about 55 million light-years away and roughly six and a half billion solar masses. In April 2019 it became the first black hole ever imaged — the famous orange ring. It was given the Hawaiian name Pōwehi, 'the adorned fathomless dark creation.'",
+        "Reflection": "The first darkness humanity ever truly saw was seen because we looked together, with many eyes at once. What in you has never been witnessed — and who would you have to invite, and how patiently, for it to finally come into view?"
+      },
+      "keywords": ["first sight", "witness", "the adorned dark", "immensity"],
+      "metadata": {
+        "emanation": "andromeda",
+        "emanation_name": "Andromeda",
+        "emanation_grammar": "paradevi"
+      }
+    },
+    {
+      "id": "cygnus-x-1",
+      "name": "Cygnus X-1",
+      "sort_order": 2,
+      "category": "black-hole",
+      "sections": {
+        "Description": "An X-ray binary about 7,000 light-years away: a black hole of roughly 20 solar masses slowly drawing gas from its blue supergiant companion star. It was the first object widely accepted as a real black hole — Stephen Hawking famously bet against it and conceded in 1990.",
+        "Reflection": "Some bonds feed one partner from the substance of the other, and still they keep dancing. Where in your closest ties are you the star, and where the darkness that receives? What would a fairer exchange of light look like?"
+      },
+      "keywords": ["companionship", "exchange", "feeding", "intimacy", "proof"],
+      "metadata": {
+        "emanation": "large-magellanic-cloud",
+        "emanation_name": "Large Magellanic Cloud",
+        "emanation_grammar": "paradevi"
+      }
+    },
+    {
+      "id": "ton-618",
+      "name": "TON 618",
+      "sort_order": 3,
+      "category": "black-hole",
+      "sections": {
+        "Description": "A distant quasar whose central black hole is estimated at tens of billions of solar masses — among the most massive known. Its light has traveled more than ten billion years to reach us, and paradoxically this vast darkness powers one of the most luminous objects ever observed.",
+        "Reflection": "The deepest hungers can wear the brightest faces. What appetite in you shines so loudly that others mistake it for pure radiance? Sit with the scale of it without judgment — what is it actually asking for?"
+      },
+      "keywords": ["enormity", "hunger", "paradox", "brilliance from darkness"],
+      "metadata": {
+        "emanation": "sombrero-galaxy",
+        "emanation_name": "Sombrero Galaxy",
+        "emanation_grammar": "paradevi"
+      }
+    },
+    {
+      "id": "bootes-void",
+      "name": "The Boötes Void",
+      "sort_order": 4,
+      "category": "void",
+      "sections": {
+        "Description": "One of the largest known voids in the universe — a nearly empty region about 330 million light-years across, several hundred million light-years away, containing remarkably few galaxies. If the Milky Way sat at its center, we might not have known other galaxies existed until well into the twentieth century.",
+        "Reflection": "There are seasons so empty that you cannot tell whether anything else exists at all. When you have lived inside such a stretch, what did the emptiness make room for? What is one small light you carried through it without noticing?"
+      },
+      "keywords": ["emptiness", "solitude", "spaciousness", "the great quiet"],
+      "metadata": {
+        "emanation": "local-group",
+        "emanation_name": "The Local Group",
+        "emanation_grammar": "paradevi"
+      }
+    },
+    {
+      "id": "v404-cygni",
+      "name": "V404 Cygni",
+      "sort_order": 5,
+      "category": "black-hole",
+      "sections": {
+        "Description": "A black hole binary about 8,000 light-years away that slept quietly for 26 years, then erupted in June 2015 into one of the brightest X-ray outbursts of its era — flickering with visible red flashes as it devoured matter faster than it could swallow.",
+        "Reflection": "What in you has been dormant for years and is beginning to stir? Long sleep is not absence — it is gathering. When the eruption comes, what would it look like to let it move through you without shame, as weather rather than failure?"
+      },
+      "keywords": ["dormancy", "eruption", "awakening", "overflow"],
+      "metadata": {
+        "emanation": "cartwheel-galaxy",
+        "emanation_name": "Cartwheel Galaxy",
+        "emanation_grammar": "paradevi"
+      }
+    },
+    {
+      "id": "gw150914",
+      "name": "GW150914",
+      "sort_order": 6,
+      "category": "event",
+      "sections": {
+        "Description": "On September 14, 2015, the LIGO detectors recorded the first gravitational waves ever directly detected: two black holes of roughly 29 and 36 solar masses, over a billion light-years away, spiraling together and merging. About three Suns' worth of mass became ripples in spacetime — the first time humanity heard the universe rather than saw it.",
+        "Reflection": "Two darknesses met, and the whole fabric of things rang like a bell. What union in your life — of losses, of endings, of selves you thought incompatible — sent out waves you are still feeling? What did you hear that you could never have seen?"
+      },
+      "keywords": ["merging", "resonance", "listening", "union", "ripples"],
+      "metadata": {
+        "emanation": "antennae-galaxies",
+        "emanation_name": "The Antennae Galaxies",
+        "emanation_grammar": "paradevi"
+      }
+    },
+    {
+      "id": "event-horizon",
+      "name": "The Event Horizon",
+      "sort_order": 7,
+      "category": "concept",
+      "sections": {
+        "Description": "The boundary around a black hole beyond which nothing — not even light — can return. It is not a solid surface but a threshold in spacetime itself: from outside, we can never see what crosses it; from inside, there is no path back out.",
+        "Reflection": "Every life has thresholds that only permit one direction of travel. What in you is being drawn past a horizon it cannot recross — a grief, a change, a knowing? Rather than pulling back, can you honor what the crossing is making of you?"
+      },
+      "keywords": ["threshold", "no return", "surrender", "boundary", "passage"],
+      "metadata": {
+        "emanation": "cosmic-web",
+        "emanation_name": "The Cosmic Web",
+        "emanation_grammar": "paradevi"
+      }
+    },
+    {
+      "id": "hawking-radiation",
+      "name": "Hawking Radiation",
+      "sort_order": 8,
+      "category": "concept",
+      "sections": {
+        "Description": "Stephen Hawking's 1974 prediction that black holes are not perfectly black: quantum effects near the horizon should let them glow faintly and, over unimaginable spans of time, evaporate entirely. It has never been directly observed, but it reshaped physics — even the ultimate devourer gives something back.",
+        "Reflection": "Nothing that takes is only taking; even the deepest dark leaks a faint warmth back into the world. What has your hardest devouring season quietly returned to you — an ember so small you almost missed it? Name it."
+      },
+      "keywords": ["return", "evaporation", "the faint glow", "impermanence"],
+      "metadata": {
+        "emanation": "m82-starburst",
+        "emanation_name": "Messier 82 (Cigar Galaxy)",
+        "emanation_grammar": "paradevi"
+      }
+    },
+    {
+      "id": "great-attractor",
+      "name": "The Great Attractor",
+      "sort_order": 9,
+      "category": "anomaly",
+      "sections": {
+        "Description": "A vast concentration of mass roughly 150 to 250 million light-years away, hidden behind the dust and stars of our own galaxy's plane, toward which the Milky Way and thousands of neighboring galaxies are streaming at hundreds of kilometers per second. We feel its pull far more clearly than we can see it.",
+        "Reflection": "You are being drawn by something you cannot see, obscured by the very stuff of your everyday life. What pull have you been feeling for years without a name for it? What if you trusted the motion before you could map the destination?"
+      },
+      "keywords": ["hidden pull", "trust", "the obscured", "drift", "longing"],
+      "metadata": {
+        "emanation": "whirlpool-galaxy",
+        "emanation_name": "Whirlpool Galaxy",
+        "emanation_grammar": "paradevi"
+      }
+    },
+    {
+      "id": "stellar-collapse",
+      "name": "Stellar Collapse — How a Black Hole Is Born",
+      "sort_order": 10,
+      "category": "concept",
+      "sections": {
+        "Description": "When a star many times more massive than the Sun exhausts its nuclear fuel, its core can no longer hold itself up and collapses in seconds. The outer layers may blaze away as a supernova while the core folds past every limit into a black hole — the death of a great light becoming a new kind of presence.",
+        "Reflection": "Some collapses are not failures but transformations too complete to reverse. What in your life burned brightest just before it fell inward? What new kind of gravity — quieter, stranger, more patient — did that ending leave at your center?"
+      },
+      "keywords": ["collapse", "transformation", "death and becoming", "supernova"],
+      "metadata": {
+        "emanation": "pinwheel-galaxy",
+        "emanation_name": "Pinwheel Galaxy",
+        "emanation_grammar": "paradevi"
+      }
+    },
+    {
+      "id": "cosmic-dark-ages",
+      "name": "The Cosmic Dark Ages",
+      "sort_order": 11,
+      "category": "era",
+      "sections": {
+        "Description": "The long era after the universe cooled enough for atoms to form — roughly 380,000 years after the Big Bang — but before the first stars ignited, some hundreds of millions of years later. The cosmos was filled with dark, neutral hydrogen: everything needed for light existed, and no light yet shone.",
+        "Reflection": "There is a darkness that comes before any star has ever burned — not loss, but the time before first light. What in you is still in its dark age: fully formed in its ingredients, waiting for ignition? Can you let the waiting be part of the making?"
+      },
+      "keywords": ["gestation", "before light", "waiting", "potential", "patience"],
+      "metadata": {
+        "emanation": "first-light-reionization",
+        "emanation_name": "First Light — Reionization",
+        "emanation_grammar": "paradevi"
+      }
+    }
+  ]
+}
