@@ -1,0 +1,24 @@
+{
+  "_note": "Channel manifest for recursive.eco. Makes this repo self-describing: recursive.eco imports it as a channel by reading this file from raw.githubusercontent.com/PlayfulProcess/kali-paradevi/main/recursive-eco.json. Declares the channel identity (rendered as a channel-document, document_data.is_channel=true), where its grammars live (grammars/<slug>/grammar.json), and the slug->UUID map (ids.json). Membership lives in `tools` (channel_slug). Mirrors recursive-tarot/recursive-eco.json. See recursive-eco/docs/DESIGN-import-channel-from-github.md.",
+  "schema_version": 1,
+  "channel": {
+    "slug": "kali-paradevi",
+    "name": "Kali · Paradevi — The Objective Sky",
+    "type": "repo",
+    "icon": "🌌",
+    "gradient": "from-fuchsia-50 to-violet-100 dark:from-fuchsia-950 dark:to-violet-950",
+    "description": "A symbolic system built on real astronomy — black holes and galaxies as a paired mirror-deck, two faces of one body. The facts are science; the meaning is yours to make. Reflective, never predictive.",
+    "landing_url": null,
+    "hero": {
+      "title": "Kali · Paradevi",
+      "subtitle": "A mirror made of the actual sky — the dark face (black holes, voids) and the light face (galaxies, radiance), each the emanation of the other.",
+      "body_md": "Where inherited astrology asks the sky to predict you, this system asks the sky to reflect you. Every card is a real object — a black hole with a catalog number, a galaxy with a measured distance — carrying a reflective layer on top of verified astronomy.\n\nKali and Paradevi are two sides of the same coin: flip the card, and the void shows you its radiance; flip it back, and the radiance shows you its void. Built in the open and bound to its GitHub repo."
+    }
+  },
+  "grammars": {
+    "paths": ["grammars/*/grammar.json"],
+    "id_map": "ids.json"
+  },
+  "maintainers": ["pp@playfulprocess.com"],
+  "default_branch": "main"
+}

@@ -49,8 +49,12 @@ private drafts):
   same coin" — mutual aspecthood, NOT one-way emanation.
 - `research/objects-shortlist.md` — 30 real objects, 15 proposed pairings, each with a one-line
   reason. Anchor pair: **Sgr A* ↔ Milky Way** ("the void at the heart of our own radiance").
-- `grammars/kali.json` + `grammars/paradevi.json` — the seed grammars (current canon; their
-  pairings differ from the shortlist in places — see Open, below).
+- `grammars/kali/grammar.json` + `grammars/paradevi/grammar.json` — the seed grammars (current
+  canon; their pairings differ from the shortlist in places — see Open, below). Layout is
+  `grammars/<slug>/grammar.json` (matches recursive-tarot, so recursive.eco's channel import +
+  GitHub→app sync work). Each grammar carries `_recursive_eco_url` (its live app link).
+- `recursive-eco.json` — the channel manifest (channel identity + grammar paths + `ids.json` map).
+  This is what makes recursive.eco import the repo as the **kali-paradevi** channel.
 - `journal/2026-07-02.md` — founding decisions + day-1 phone tasks.
 
 **Decided (don't re-litigate):**

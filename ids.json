@@ -1,4 +1,11 @@
 {
-  "kali": "2a61e732-f204-4c65-88e3-7c3cdc371b25",
-  "paradevi": "176d6ced-9ab0-4ed3-9e8b-c1771cfc03b5"
+  "_note": "Slug -> recursive.eco grammar UUID (the deckId) for the Kali/Paradevi channel. Used by recursive.eco to bind repo grammars to their live rows and to build per-deck links (open/read = https://flow.recursive.eco/play?id=<id>). _public_now lists the slugs that are is_public=true on recursive.eco (only public grammars import as channel members). Keep this updated when new grammars are created. Mirrors recursive-tarot/tarot/_eco_ids.json shape.",
+  "_public_now": [
+    "kali",
+    "paradevi"
+  ],
+  "ids": {
+    "kali": "2a61e732-f204-4c65-88e3-7c3cdc371b25",
+    "paradevi": "176d6ced-9ab0-4ed3-9e8b-c1771cfc03b5"
+  }
 }
