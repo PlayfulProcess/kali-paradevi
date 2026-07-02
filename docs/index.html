@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kali–Paradevi — an astronomy of the two-sided coin</title>
+<meta name="description" content="A new reflective system built on real astronomy: black holes and galaxies as two faces of one body. Flip the void, find the radiance.">
+<style>
+  :root{
+    --ink:#e8e4f0; --void:#07060a; --void2:#120f1a; --violet:#a855f7;
+    --paper:#faf7f2; --day:#2a2440; --gold:#c9a84c;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+  .split{display:flex;min-height:100vh;flex-wrap:wrap}
+  .half{flex:1 1 420px;display:flex;flex-direction:column;justify-content:center;align-items:center;
+        padding:9vh 8vw;position:relative;transition:flex .6s ease}
+  .half:hover{flex-grow:1.35}
+  .kali{background:radial-gradient(ellipse at 50% 42%, #1a1428 0%, var(--void2) 45%, var(--void) 100%);color:var(--ink)}
+  .paradevi{background:radial-gradient(ellipse at 50% 42%, #fffdf7 0%, var(--paper) 55%, #efe9dd 100%);color:var(--day)}
+  .orb{width:120px;height:120px;border-radius:50%;margin-bottom:2.2rem;position:relative}
+  .kali .orb{background:#000;box-shadow:0 0 60px 18px rgba(168,85,247,.35), inset 0 0 24px 8px rgba(168,85,247,.25);
+             border:1px solid rgba(168,85,247,.4)}
+  .kali .orb::after{content:'';position:absolute;inset:-14px;border-radius:50%;
+             border:1px solid rgba(232,228,240,.18);transform:rotateX(64deg)}
+  .paradevi .orb{background:radial-gradient(circle at 38% 38%, #fff 0%, #f3e9c8 35%, #d9b96a 75%, #b98f3e 100%);
+             box-shadow:0 0 70px 22px rgba(201,168,76,.35)}
+  .paradevi .orb::after{content:'';position:absolute;inset:-16px;border-radius:50%;
+             border:1px dashed rgba(42,36,64,.25);transform:rotateX(64deg)}
+  h1{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:normal;letter-spacing:.04em;margin-bottom:.7rem}
+  .sub{font-size:clamp(.95rem,1.5vw,1.1rem);opacity:.82;max-width:34ch;text-align:center;line-height:1.65}
+  .coin{background:var(--void);color:var(--ink);text-align:center;padding:5.5rem 8vw}
+  .coin p{max-width:62ch;margin:0 auto 1.4rem;line-height:1.8;font-size:1.06rem}
+  .coin .q{font-style:italic;opacity:.85}
+  .coin .attr{font-size:.85rem;opacity:.55}
+  .foot{background:var(--void);color:var(--ink);text-align:center;padding:0 8vw 4.5rem;font-size:.9rem}
+  .foot a{color:var(--violet);text-decoration:none;border-bottom:1px solid rgba(168,85,247,.35)}
+  .foot .by{display:block;margin-top:2.2rem;opacity:.5;letter-spacing:.08em;font-size:.8rem}
+  .tag{display:inline-block;margin-top:1.6rem;padding:.35rem .95rem;border-radius:999px;font-size:.8rem;
+       letter-spacing:.12em;text-transform:uppercase}
+  .kali .tag{border:1px solid rgba(168,85,247,.5)}
+  .paradevi .tag{border:1px solid rgba(42,36,64,.4)}
+</style>
+</head>
+<body>
+  <div class="split">
+    <section class="half kali">
+      <div class="orb" aria-hidden="true"></div>
+      <h1>Kali</h1>
+      <p class="sub">The dark face. Black holes, voids, mergers heard in the dark — dissolution, endings, the devouring of time.</p>
+      <span class="tag">the void</span>
+    </section>
+    <section class="half paradevi">
+      <div class="orb" aria-hidden="true"></div>
+      <h1>Paradevi</h1>
+      <p class="sub">The light face. Galaxies, star nurseries, first light — manifestation, abundance, the shining of structure.</p>
+      <span class="tag">the radiance</span>
+    </section>
+  </div>
+  <div class="coin">
+    <p>Two faces, one body. Every dark card is linked to a light counterpart — flip the void and it shows you its radiance; flip the radiance and it shows you its void.</p>
+    <p class="q">"Kali and Para are two sides of the same coin. They're aspects of each other."</p>
+    <p class="attr">— Christopher Wallis, public satsang (nondual Śaiva Tantra)</p>
+    <p>Built on real astronomy — real objects, real distances, honest reflection prompts. Not prediction. A mirror, played as a game.</p>
+  </div>
+  <div class="foot">
+    <p>A <a href="https://recursive.eco" rel="noopener">recursive.eco</a> project — seed stage.</p>
+    <span class="by">PlayfulProcess</span>
+  </div>
+</body>
+</html>

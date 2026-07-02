@@ -57,7 +57,7 @@ The builder's working phrase was "one is the emanation of the other." The corpus
 > "...you know, Kali and Para are two sides of the same coin. They're aspects of each other."
 > — Wallis, AMA satsang, answering a question on the relationship of Kālī and Parā Vāk / Parā Devī (`youtube/0000-00-00-ask-me-anything-satsang-from-fb-group.md`, ~1:09, video uEScKMiMruM, t=4140s; context: "for the Kaula Trika lineage of Abhinavagupta, which is Krama influenced")
 
-And then, astonishingly for this project:
+And then, directly relevant to this project:
 
 > "Kali is the the black hole, if you will, and [Parā] is the white hole."
 > — same session, t=4170s. **Transcript garble flag:** the auto-caption reads "prana is the white hole," but the question and preceding sentence are about Kali and Parā; "Parā" is the near-certain reading. He immediately notes the physics metaphor is dated (physicists have largely dropped paired white holes) — he offers it as image, not cosmology. VERIFY against the video before quoting publicly.
