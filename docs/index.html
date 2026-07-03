@@ -1,71 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kali–Paradevi — an astronomy of the two-sided coin</title>
-<meta name="description" content="A new reflective system built on real astronomy: black holes and galaxies as two faces of one body. Flip the void, find the radiance.">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kali · Paradevi — The Objective Sky</title>
+<meta name="description" content="A symbolic system built on real astronomy — black holes and galaxies as a paired mirror-deck, two faces of one body. The facts are science; the meaning is yours. Reflective, never predictive. Part of the Trika family on recursive.eco." />
+<meta property="og:title" content="Kali · Paradevi — The Objective Sky" />
+<meta property="og:description" content="Black holes and galaxies as a paired mirror-deck. Flip the void, find the radiance. Built on real astronomy; reflective, never predictive." />
 <style>
   :root{
-    --ink:#e8e4f0; --void:#07060a; --void2:#120f1a; --violet:#a855f7;
-    --paper:#faf7f2; --day:#2a2440; --gold:#c9a84c;
+    --bg:#07060a; --bg2:#120f1a; --panel:#14121c; --line:#231f31;
+    --ink:#ece9f5; --mut:#9a95b0;
+    --kali:#b06cf0; --kali-ink:#d3aef7;
+    --para:#ffd9a0; --para-ink:#ffcf8c;
   }
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
-  .split{display:flex;min-height:100vh;flex-wrap:wrap}
-  .half{flex:1 1 420px;display:flex;flex-direction:column;justify-content:center;align-items:center;
-        padding:9vh 8vw;position:relative;transition:flex .6s ease}
-  .half:hover{flex-grow:1.35}
-  .kali{background:radial-gradient(ellipse at 50% 42%, #1a1428 0%, var(--void2) 45%, var(--void) 100%);color:var(--ink)}
-  .paradevi{background:radial-gradient(ellipse at 50% 42%, #fffdf7 0%, var(--paper) 55%, #efe9dd 100%);color:var(--day)}
-  .orb{width:120px;height:120px;border-radius:50%;margin-bottom:2.2rem;position:relative}
-  .kali .orb{background:#000;box-shadow:0 0 60px 18px rgba(168,85,247,.35), inset 0 0 24px 8px rgba(168,85,247,.25);
-             border:1px solid rgba(168,85,247,.4)}
-  .kali .orb::after{content:'';position:absolute;inset:-14px;border-radius:50%;
-             border:1px solid rgba(232,228,240,.18);transform:rotateX(64deg)}
-  .paradevi .orb{background:radial-gradient(circle at 38% 38%, #fff 0%, #f3e9c8 35%, #d9b96a 75%, #b98f3e 100%);
-             box-shadow:0 0 70px 22px rgba(201,168,76,.35)}
-  .paradevi .orb::after{content:'';position:absolute;inset:-16px;border-radius:50%;
-             border:1px dashed rgba(42,36,64,.25);transform:rotateX(64deg)}
-  h1{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:normal;letter-spacing:.04em;margin-bottom:.7rem}
-  .sub{font-size:clamp(.95rem,1.5vw,1.1rem);opacity:.82;max-width:34ch;text-align:center;line-height:1.65}
-  .coin{background:var(--void);color:var(--ink);text-align:center;padding:5.5rem 8vw}
-  .coin p{max-width:62ch;margin:0 auto 1.4rem;line-height:1.8;font-size:1.06rem}
-  .coin .q{font-style:italic;opacity:.85}
-  .coin .attr{font-size:.85rem;opacity:.55}
-  .foot{background:var(--void);color:var(--ink);text-align:center;padding:0 8vw 4.5rem;font-size:.9rem}
-  .foot a{color:var(--violet);text-decoration:none;border-bottom:1px solid rgba(168,85,247,.35)}
-  .foot .by{display:block;margin-top:2.2rem;opacity:.5;letter-spacing:.08em;font-size:.8rem}
-  .tag{display:inline-block;margin-top:1.6rem;padding:.35rem .95rem;border-radius:999px;font-size:.8rem;
-       letter-spacing:.12em;text-transform:uppercase}
-  .kali .tag{border:1px solid rgba(168,85,247,.5)}
-  .paradevi .tag{border:1px solid rgba(42,36,64,.4)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{margin:0;padding:0}
+  body{
+    background:
+      radial-gradient(900px 520px at 20% -160px, rgba(140,70,220,.30), transparent 60%),
+      radial-gradient(900px 540px at 84% -120px, rgba(255,200,120,.13), transparent 60%),
+      var(--bg);
+    color:var(--ink);
+    font:16px/1.65 ui-serif, Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--para-ink); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px; margin:0 auto; padding:0 20px}
+
+  /* ── sticky nav ── */
+  .nav{position:sticky; top:0; z-index:20; backdrop-filter:blur(10px);
+       background:rgba(7,6,10,.72); border-bottom:1px solid var(--line)}
+  .nav .row{max-width:960px; margin:0 auto; padding:12px 20px; display:flex; align-items:center; gap:18px}
+  .brand{display:flex; align-items:center; gap:9px; font-weight:600; letter-spacing:.01em; font-size:15px}
+  .brand .k{color:var(--kali-ink)} .brand .p{color:var(--para-ink)}
+  .brand svg{width:20px; height:20px; color:var(--kali-ink)}
+  .nav nav{margin-left:auto; display:flex; gap:20px; font:600 13px/1 ui-sans-serif,system-ui,sans-serif}
+  .nav nav a{color:var(--mut)} .nav nav a:hover{color:var(--ink); text-decoration:none}
+  @media (max-width:620px){ .nav nav a.hide-sm{display:none} }
+
+  /* ── split orb hero ── */
+  header.hero{padding:0}
+  .split{display:flex; flex-wrap:wrap; min-height:62vh}
+  .half{flex:1 1 380px; display:flex; flex-direction:column; justify-content:center; align-items:center;
+        padding:8vh 7vw; text-align:center; transition:flex-grow .6s ease}
+  .half:hover{flex-grow:1.3}
+  .half.kali{background:radial-gradient(ellipse at 50% 40%, #1a1428 0%, var(--bg2) 48%, var(--bg) 100%)}
+  .half.para{background:radial-gradient(ellipse at 50% 40%, #241a2e 0%, #17121e 55%, var(--bg) 100%)}
+  .orb{width:112px; height:112px; border-radius:50%; margin-bottom:1.9rem; position:relative}
+  .kali .orb{background:#020103;
+             box-shadow:0 0 60px 18px rgba(176,108,240,.34), inset 0 0 26px 9px rgba(176,108,240,.28);
+             border:1px solid rgba(176,108,240,.4)}
+  .kali .orb::after{content:''; position:absolute; inset:-14px; border-radius:50%;
+             border:1px solid rgba(232,228,240,.16); transform:rotateX(64deg)}
+  .para .orb{background:radial-gradient(circle at 38% 36%, #fff 0%, #ffe9b8 34%, #e9c06a 72%, #b98f3e 100%);
+             box-shadow:0 0 70px 22px rgba(255,207,140,.30)}
+  .para .orb::after{content:''; position:absolute; inset:-16px; border-radius:50%;
+             border:1px dashed rgba(255,220,150,.28); transform:rotateX(64deg)}
+  .half h1{font-size:clamp(1.7rem,3.6vw,2.5rem); font-weight:normal; letter-spacing:.03em; margin:0 0 .55rem}
+  .kali h1{color:var(--kali-ink)} .para h1{color:var(--para-ink)}
+  .half .sub{font-size:clamp(.95rem,1.5vw,1.06rem); color:var(--mut); max-width:32ch; line-height:1.6; margin:0}
+  .tag{display:inline-block; margin-top:1.4rem; padding:.34rem .9rem; border-radius:999px; font:600 11px/1 ui-sans-serif,system-ui,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:var(--mut)}
+  .kali .tag{border:1px solid rgba(176,108,240,.5)} .para .tag{border:1px solid rgba(255,207,140,.5)}
+
+  /* ── sections ── */
+  section.band{padding:52px 0}
+  .kicker{font:600 12px/1 ui-sans-serif,system-ui,sans-serif; letter-spacing:.22em; text-transform:uppercase; color:var(--mut)}
+  h2{font-size:clamp(1.4rem,3vw,1.9rem); font-weight:normal; margin:.5rem 0 .2rem; letter-spacing:.01em}
+  .lead{max-width:64ch; color:#cfc9df; margin:14px 0 0}
+  .q{font-style:italic; color:var(--mut); border-left:2px solid var(--line); padding-left:16px; margin:22px 0}
+  .q .attr{display:block; font-style:normal; font-size:13px; margin-top:8px; opacity:.7}
+  .rule{border:0; border-top:1px solid var(--line); margin:0}
+
+  /* ── grammar gallery ── */
+  .grid{display:grid; gap:16px; grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr)); margin-top:22px}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:20px; display:flex; flex-direction:column; gap:8px}
+  .card.kali{box-shadow:inset 0 1px 0 rgba(176,108,240,.20)}
+  .card.para{box-shadow:inset 0 1px 0 rgba(255,207,140,.22)}
+  .card .face{font:600 11px/1 ui-sans-serif,system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase}
+  .card.kali .face{color:var(--kali-ink)} .card.para .face{color:var(--para-ink)}
+  .card h3{margin:0; font-size:21px; font-weight:normal}
+  .card p{margin:0; color:var(--mut); font-size:14.5px; flex:1}
+  .actions{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+  .btn{font:600 13px/1 ui-sans-serif,system-ui,sans-serif; padding:9px 13px; border-radius:999px; border:1px solid #33303f; background:#1b1826; color:var(--ink); cursor:pointer; text-decoration:none}
+  .btn:hover{text-decoration:none; border-color:#4a4560}
+  .card.kali .btn.primary{background:var(--kali); color:#140a22; border-color:var(--kali)}
+  .card.para .btn.primary{background:var(--para); color:#241605; border-color:var(--para)}
+  .muted{color:var(--mut); font-size:14px}
+
+  /* ── two-faces explainer + trika ── */
+  .cols{display:grid; gap:14px; grid-template-columns:1fr 1fr; margin-top:22px}
+  .cell{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px}
+  .cell b{display:block; font:600 12px/1 ui-sans-serif,system-ui,sans-serif; letter-spacing:.06em; text-transform:uppercase; margin-bottom:8px}
+  .cell.kali b{color:var(--kali-ink)} .cell.para b{color:var(--para-ink)}
+  .cell p{margin:0; color:var(--mut); font-size:14.5px}
+  @media (max-width:600px){ .cols{grid-template-columns:1fr} }
+
+  footer{border-top:1px solid var(--line); margin-top:16px; padding:28px 20px 60px; text-align:center; color:var(--mut); font:14px/1.7 ui-sans-serif,system-ui,sans-serif}
 </style>
 </head>
 <body>
+
+<div class="nav">
+  <div class="row">
+    <span class="brand">
+      <!-- Astrology glyph (SVG, never emoji) — the family mark; see ../ICONS.md -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M17 4a7 7 0 1 0 3 11 5.6 5.6 0 0 1-3-11z" />
+        <path d="M8.5 4.5l.6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6z" />
+      </svg>
+      <span><span class="k">Kali</span> · <span class="p">Paradevi</span></span>
+    </span>
+    <nav>
+      <a href="#faces" class="hide-sm">The Two Faces</a>
+      <a href="#grammars">Grammars</a>
+      <a href="#read" class="hide-sm">How to read</a>
+      <a href="https://github.com/PlayfulProcess/kali-paradevi" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero" id="faces">
   <div class="split">
     <section class="half kali">
       <div class="orb" aria-hidden="true"></div>
       <h1>Kali</h1>
-      <p class="sub">The dark face. Black holes, voids, mergers heard in the dark — dissolution, endings, the devouring of time.</p>
+      <p class="sub">The dark face. Black holes, voids, mergers in the unlit dark — dissolution, endings, the devouring of time.</p>
       <span class="tag">the void</span>
     </section>
-    <section class="half paradevi">
+    <section class="half para">
       <div class="orb" aria-hidden="true"></div>
       <h1>Paradevi</h1>
       <p class="sub">The light face. Galaxies, star nurseries, first light — manifestation, abundance, the shining of structure.</p>
       <span class="tag">the radiance</span>
     </section>
   </div>
-  <div class="coin">
-    <p>Two faces, one body. Every dark card is linked to a light counterpart — flip the void and it shows you its radiance; flip the radiance and it shows you its void.</p>
-    <p class="q">"Kali and Para are two sides of the same coin. They're aspects of each other."</p>
-    <p class="attr">— Christopher Wallis, public satsang (nondual Śaiva Tantra)</p>
-    <p>Built on real astronomy — real objects, real distances, honest reflection prompts. Not prediction. A mirror, played as a game.</p>
+</header>
+
+<hr class="rule" />
+
+<section class="band">
+  <div class="wrap">
+    <span class="kicker">The objective sky</span>
+    <h2>A mirror made of the actual sky</h2>
+    <p class="lead">
+      Where inherited astrology asks the sky to <em>predict</em> you, Kali · Paradevi asks the sky to
+      <b>reflect</b> you. Every card is a real object — a black hole with a catalog number, a galaxy with
+      a measured distance — carrying a reflective layer on top of verified astronomy. The facts are
+      science; the meaning is yours to make. <b>Not predictive, not doctrine</b> — an invitation to look.
+    </p>
+    <p class="q">
+      "Kali and Para are two sides of the same coin. They're aspects of each other."
+      <span class="attr">— Christopher Wallis, on nondual Śaiva Tantra</span>
+    </p>
   </div>
-  <div class="foot">
-    <p>A <a href="https://recursive.eco" rel="noopener">recursive.eco</a> project — seed stage.</p>
-    <span class="by">PlayfulProcess</span>
+</section>
+
+<hr class="rule" />
+
+<section class="band" id="grammars">
+  <div class="wrap">
+    <span class="kicker">Grammars</span>
+    <h2>The paired deck</h2>
+    <p class="lead">Two grammars, one body. Each opens in recursive.eco — the app renders the cards, the
+      study view, and the reflection prompts. Nothing to install.</p>
+    <div class="grid" id="grammars-grid">
+      <div class="card"><p class="muted">Loading grammars…</p></div>
+    </div>
   </div>
+</section>
+
+<hr class="rule" />
+
+<section class="band" id="read">
+  <div class="wrap">
+    <span class="kicker">How to read</span>
+    <h2>Flip the void, find the radiance</h2>
+    <p class="lead">Every dark card is bound 1:1 to a light counterpart. Draw a black hole and its paired
+      galaxy is named on the card; draw a galaxy and its paired void answers back. You read the pair, not
+      the single face — dissolution and manifestation as one motion seen from two sides.</p>
+    <div class="cols">
+      <div class="cell kali"><b>Kali — the dark face</b><p>Black holes, voids, mergers, the unseen mass
+        that bends everything. What devours, dissolves, ends, transforms. Each item names its light twin.</p></div>
+      <div class="cell para"><b>Paradevi — the light face</b><p>Galaxies, star nurseries, radiant
+        structure. What pours forth, connects, manifests, shines. Each item names its dark twin.</p></div>
+    </div>
+    <p class="lead" style="margin-top:18px">A card is a prompt, not a prophecy: read to know yourself, not
+      to be told your fate.</p>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section class="band">
+  <div class="wrap">
+    <span class="kicker">The family</span>
+    <h2>The Trika architecture</h2>
+    <div class="cols">
+      <div class="cell"><b>Kali · Paradevi — this repo</b><p>Black holes, galaxies, the deep sky. The
+        <em>objective</em> sky: real catalog objects, paired, with a labeled mirror layer.</p></div>
+      <div class="cell"><b><a href="https://github.com/PlayfulProcess/nara">Nara →</a></b><p>The ecliptic,
+        the seasons, the tropical zodiac. The <em>human-subjective</em> sky, and home of the family's
+        beginner course.</p></div>
+    </div>
+    <p class="lead" style="margin-top:18px">Together, the objective and subjective skies form
+      <b>Trika</b> — the metagrammar. The same moment, viewed two honest ways.</p>
+  </div>
+</section>
+
+<footer>
+  Built in the open on <a href="https://recursive.eco">recursive.eco</a> ·
+  <a href="https://github.com/PlayfulProcess/kali-paradevi">source on GitHub</a><br/>
+  Astronomy is real; the meaning-making is chosen, and yours. — PlayfulProcess
+</footer>
+
+<script>
+  // Live grammar gallery from this repo's own ids.json. Pages serves this page from /docs, so the
+  // fetch resolves to /docs/ids.json (a copy kept beside this page). Known grammars get a nicer
+  // name + which face; new ones fall back to a humanized slug so the gallery auto-updates.
+  var META = {
+    "kali":     { name:"Kali — The Dark Grammar",  face:"kali", tag:"Black holes, voids, and the unlit stretches — what devours, dissolves, transforms. Each item names its light twin." },
+    "paradevi": { name:"Paradevi — The Light Grammar", face:"para", tag:"Galaxies, first light, radiant architecture — what pours forth, connects, emanates. Each item names its dark twin." }
+  };
+  var APP = "https://flow.recursive.eco";
+  var LANDING = "https://recursive.eco";
+  function humanize(s){ return s.replace(/-/g," ").replace(/\b\w/g,function(c){return c.toUpperCase();}); }
+  function card(slug, uuid){
+    var m = META[slug] || {};
+    var name = m.name || humanize(slug);
+    var face = m.face || "kali";
+    var tag = m.tag || "A Kali · Paradevi grammar.";
+    var el = document.createElement("div");
+    el.className = "card " + face;
+    el.innerHTML =
+      '<div class="face">' + (face === "para" ? "Paradevi · light" : "Kali · dark") + '</div>' +
+      '<h3>' + name + '</h3><p>' + tag + '</p>' +
+      '<div class="actions">' +
+        '<a class="btn primary" target="_blank" rel="noopener" href="' + APP + '/play?id=' + uuid + '">Play</a>' +
+        '<a class="btn" target="_blank" rel="noopener" href="' + LANDING + '/pages/grammar-viewer.html?type=custom&id=' + uuid + '">Cards</a>' +
+        '<a class="btn" target="_blank" rel="noopener" href="' + LANDING + '/pages/study-viewer.html?type=custom&id=' + uuid + '">Study</a>' +
+      '</div>';
+    return el;
+  }
+  fetch("ids.json").then(function(r){ return r.json(); }).then(function(data){
+    var ids = data.ids || {};
+    var host = document.getElementById("grammars-grid");
+    host.innerHTML = "";
+    var order = ["kali","paradevi"];
+    var slugs = Object.keys(ids).sort(function(a,b){
+      return (order.indexOf(a)+99)%99 - (order.indexOf(b)+99)%99 || a.localeCompare(b);
+    });
+    if(!slugs.length){ host.innerHTML = '<div class="card"><p class="muted">No grammars yet.</p></div>'; return; }
+    for(var i=0;i<slugs.length;i++){ host.appendChild(card(slugs[i], ids[slugs[i]])); }
+  }).catch(function(){
+    document.getElementById("grammars-grid").innerHTML =
+      '<div class="card"><p class="muted">Grammar list unavailable right now — see the <a href="https://github.com/PlayfulProcess/kali-paradevi">repo</a>.</p></div>';
+  });
+</script>
 </body>
 </html>

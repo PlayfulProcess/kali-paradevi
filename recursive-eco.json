@@ -5,10 +5,11 @@
     "slug": "kali-paradevi",
     "name": "Kali · Paradevi — The Objective Sky",
     "type": "repo",
-    "icon": "🌌",
+    "icon": null,
+    "_icon_note": "No emoji — recursive.eco renders the channel hero with an SVG resolved by slug (AstrologyIcon for the sky channels). SVG icons, never emoji. See ICONS.md.",
     "gradient": "from-fuchsia-50 to-violet-100 dark:from-fuchsia-950 dark:to-violet-950",
     "description": "A symbolic system built on real astronomy — black holes and galaxies as a paired mirror-deck, two faces of one body. The facts are science; the meaning is yours to make. Reflective, never predictive.",
-    "landing_url": null,
+    "landing_url": "https://playfulprocess.github.io/kali-paradevi/",
     "hero": {
       "title": "Kali · Paradevi",
       "subtitle": "A mirror made of the actual sky — the dark face (black holes, voids) and the light face (galaxies, radiance), each the emanation of the other.",
