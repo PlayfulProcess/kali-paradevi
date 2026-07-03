@@ -36,6 +36,17 @@ private drafts):
 
 (Slug→UUID map lives in `ids.json` — keep it updated when new grammars are created.)
 
+**Preview any grammar from your phone (no extra hosting needed):** swap `<id>` for the UUID
+above. Play/read + Edit are on the APP (flow.recursive.eco); Cards/Study/Tree/Thumbnails are on
+the LANDING viewers (recursive.eco) — note the different domain. Play =
+`https://flow.recursive.eco/play?id=<id>` · Edit =
+`https://flow.recursive.eco/create/dashboard/unified/new?id=<id>` · Cards =
+`https://recursive.eco/pages/grammar-viewer.html?type=custom&id=<id>` · Study =
+`https://recursive.eco/pages/study-viewer.html?type=custom&id=<id>` · Tree =
+`https://recursive.eco/pages/tree-viewer.html?type=custom&id=<id>` · Thumbnails = same as
+Cards + `&layout=thumbnails`.
+(Also kept in `ids.json` → `_preview_links` for a machine-readable copy.)
+
 **Key files (read before proposing anything):**
 - `README.md` — the two faces that are one body: Kali (black holes, voids, dissolution, dark
   mode) / Paradevi (galaxies, radiance, manifestation, light mode); what this is NOT.
