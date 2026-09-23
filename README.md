@@ -40,7 +40,9 @@ Seed stage. Private repo while the foundations are laid. Founding documents writ
 
 ## License
 
-Placeholder — builder to confirm. Suggested: **CC BY-SA 4.0** for data and text (matching recursive.eco-schemas and the tarot repo); the seed grammars in `grammars/` already declare it. Image credits are carried per-item (NASA public domain; ESA/Hubble, ESO, EHT under CC BY 4.0 — verify per image).
+- **Code** (`docs/index.html` and any scripts added later): Apache-2.0 — see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).
+- **Data and text** (`grammars/`, `research/`, `reference/`, `library/`, `journal/`, `docs/ids.json`, and the Markdown documents): placeholder — builder to confirm. Suggested: **CC BY-SA 4.0** for data and text (matching recursive.eco-schemas and the tarot repo); the seed grammars in `grammars/` already declare it. Image credits are carried per-item (NASA public domain; ESA/Hubble, ESO, EHT under CC BY 4.0 — verify per image).
+- **The names** "recursive.eco" and "Recursive", and the spiral logo: not licensed — see [`TRADEMARKS.md`](TRADEMARKS.md).
 
 ## Author
 
