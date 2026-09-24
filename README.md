@@ -8,6 +8,18 @@ The system has two faces that are one body. **Kali** is the dark face: black hol
 
 Grief and play coexist here. A supermassive black hole sits at the heart of our own galaxy's light — that is not a metaphor we invented, it is where we live.
 
+## Work in progress
+
+This is a work in progress. I published it mainly so the pages could be served, and it isn't
+finished. Contributors are welcome: open an issue or send a pull request, however small.
+
+The idea behind [recursive.eco](https://recursive.eco) is a hypothesis, not a claim: that we may
+need to learn together how to create the conditions for recursive eco-improvement, rather than
+race toward recursive self-improvement.
+
+If your work appears here and you'd like it featured differently, removed, or given a shelf of
+your own, please write to pp@playfulprocess.com.
+
 ## Dual-mode architecture
 
 | | Kali | Paradevi |
@@ -36,7 +48,7 @@ One system, two lenses. Content varies by mode; the underlying deck is a set of 
 
 ## Status
 
-Seed stage. Private repo while the foundations are laid. Founding documents written 2026-07-02.
+Seed stage, and public: the foundations are still being laid (see "Work in progress" above). Founding documents written 2026-07-02.
 
 ## License
 
